@@ -12,15 +12,15 @@ A Simple FastAPI Project that Provides Demo User SignUp Data for Testing, Learni
 
 ## Base URLs
 
-### Vercel
+### Hosted by Vercel
 
-```text
+```url
 https://api-demo-deployment.vercel.app
 ```
 
-### Render
+### Hosted by Render
 
-```text
+```url
 https://api-demo-deployment.onrender.com
 ```
 
@@ -53,7 +53,7 @@ Returns API status information.
 GET /sign-up-data
 ```
 
-Returns all available demo user records.
+Returns available demo user sign-up data.
 
 #### Example Response
 
@@ -79,15 +79,15 @@ Returns all available demo user records.
 
 ## API Documentation
 
-### Swagger UI
+### Swagger UI - Vercel
 
-```text
+```url
 https://api-demo-deployment.vercel.app/docs
 ```
 
-### Render
+### Swagger UI - Render
 
-```text
+```url
 https://api-demo-deployment.onrender.com/docs
 ```
 
@@ -116,13 +116,13 @@ pip install -r requirements.txt
 ### Start Server
 
 ```bash
-uvicorn main:app --reload
+uvicorn backend.main:app --port 3000 --reload
 ```
 
 Server will start at:
 
 ```text
-http://127.0.0.1:8000
+http://127.0.0.1:3000
 ```
 
 ---
