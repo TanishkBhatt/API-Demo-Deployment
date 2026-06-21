@@ -12,5 +12,5 @@ router = APIRouter()
 def main() -> dict:
     return {
         "success": True,
-        "message": "Connection Succesful"
+        "message": "Connection Successful!"
     }
