@@ -7,3 +7,5 @@ def json_parser(filepath: str) -> Dict[str, Any]:
     if data:
         return data
     return {}
+
+JSON_FILEPATH: str = "backend/database/user_data.json"

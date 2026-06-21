@@ -1,11 +1,11 @@
 from fastapi import HTTPException, status
 from typing import List, Dict, Any
 from random import sample
-from backend.utils.json_parser import json_parser
+from backend.utils.json_parser import json_parser, JSON_FILEPATH
 
 def get_sign_up_data(limit: int) -> Dict[str, Any]:
     # Fetching JSON Data
-    data: Dict[str, Any] = json_parser("D:/API-Demo-Deployment/backend/database/user_data.json")
+    data: Dict[str, Any] = json_parser(JSON_FILEPATH)
 
     # Validating Is JSON Data Exists
     if not data:
